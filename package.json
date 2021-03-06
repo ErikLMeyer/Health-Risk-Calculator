@@ -1,0 +1,19 @@
+{
+  "name": "health-risk-calculator",
+  "version": "1.0.0",
+  "description": "A simple calculator worked on as a group",
+  "main": "risk-calculator.js",
+  "scripts": {
+    "test": "node risk-calculator.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ErikLMeyer/Health-Risk-Calculator.git"
+  },
+  "author": "The Red Pandas SCRUM team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ErikLMeyer/Health-Risk-Calculator/issues"
+  },
+  "homepage": "https://github.com/ErikLMeyer/Health-Risk-Calculator#readme"
+}
