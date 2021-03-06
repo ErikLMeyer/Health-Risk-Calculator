@@ -10,6 +10,11 @@ img {
 	padding-bottom: 30px;
 }
 
+p {
+	padding-left: 10px;
+	margin: 0;
+}
+
 h1 {
 	padding-left: 10px;
 }
