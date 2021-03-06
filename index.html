@@ -1,0 +1,127 @@
+<!--
+Author: Ren Gernes
+Class: Software Engineering
+Project: Lab2/Dice Roller
+Description: This is the initial version 
+of my dice roller app and is being submitted
+as part of Lab 2
+-->
+
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8" name="viewport" content="width=device-width, 
+		initial-scale=1.0">
+		
+		<!-- Style Sheet -->
+		<link rel="stylesheet" type="text/css" href="formatting.css">
+		
+		<title> Health Insurance Risk Calculator </title>
+	</head>
+	
+	<body>
+	<h1>Health Insurance Risk Calculator</h1>
+	
+	<img width="500" height="300"
+	src="chart.jpg" alt="Blood Pressure Chart"></img>
+	
+	<table>
+	<tr valign="top">
+		<th><h3>Select your age: </h3></th>
+		<th><select name="age" id="age">
+		  <option value="under_30">Under 30</option>
+		  <option value="30_to_45">30 to 45</option>
+		  <option value="45_to_60">45 to 60</option>
+		  <option value="other">Other</option>
+		</select></th>
+	</tr>
+	
+	<tr>
+		<th><h3>Height in inches: </h3></th>
+		<th><input id="height"></input></th>
+	</tr>
+	
+	<tr>
+		<th><h3>Weight in inches: </h3></th>
+		<th><input id="weight"></input></th>
+	</tr>
+	
+	<tr>
+		<th><h3>Systolic Blood Pressure: </h3></th>
+		<th><select name="systolic" id="systolic">
+		  <option value="less_than_120">Less than 120</option>
+		  <option value="120_to_130">120-130</option>
+		  <option value="130_to_140">130-140</option>
+		  <option value="140_to_180">140-180</option>
+		  <option value="more_than_180">More than 180</option></th>
+		</select>
+	</tr>
+	
+	<tr>
+	<th><h3>Diastolic Blood Pressure: </h3></th>
+	<th><select name="diastolic" id="diastolic">
+	  <option value="less_than_80">Less than 80</option>
+	  <option value="80_to_90">80-90</option>
+	  <option value="90_to_120">90-120</option>
+	  <option value="more_than_120">More than 120</option>
+	</select></th>
+	</tr>
+	</table>
+	
+	<h3>Family History</h3>
+	<br>
+	<h4>Does your family have a history of: </h4>
+	<br>
+	<table>
+	<tr>
+		<th><h5>Diabetes: </h5></th>
+		<th><input type="radio" id="d_yes" name="diabetes">
+		<label for="d_yes">yes</label>
+		<input type="radio" id="d_no" name="diabetes">
+		<label for="d_no">no</label></th>
+	</tr>
+	
+	<tr>
+		<th><h5>Cancer: </h5></th>
+		<th><input type="radio" id="c_yes" name="cancer">
+		<label for="c_yes">yes</label>
+		<input type="radio" id="c_no" name="cancer">
+		<label for="c_no">no</label></th>
+	</tr>
+	
+	<tr>
+		<th><h5>Alzheimer's: </h5></th>
+		<th><input type="radio" id="a_yes" name="alzheimers">
+		<label for="a_yes">yes</label>
+		<input type="radio" id="a_no" name="alzheimers">
+		<label for="a_no">no</label></th>
+	</tr>
+	</table>
+	
+	<h3>Risk Scores</h3>
+	<br>
+	<table>
+	<tr>
+		<th><h4>Age: </h4></th>
+		<th><input disabled id="age_risk"></input></th>
+	</tr>
+	
+	<tr>
+		<th><h4>BMI: </h4></th>
+		<th><input disabled id="bmi_risk"></input></th>
+	</tr>
+	
+	<tr>
+		<th><h4>Blood Pressure: </h4></th>
+		<th><input disabled id="blood_pressure_risk"></input></th>
+	</tr>
+	
+	<tr>
+		<th><h4>Family History: </h4></th>
+		<th><input disabled id="family_history"></input></th>
+	</tr>
+	</table>
+	
+	<button type="button" onclick="calcInsurance">Calculate Risk</button>
+	</body>
+</html>
