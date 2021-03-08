@@ -2,7 +2,7 @@
 
 A simple calculator. Project demonstrates ability to work in a team.
 
-Authors: Erik L. Meyer, Ren Gernes, Matthew, Carter
-emails: erikmeyer@lewisu.edu, 
+Authors: Erik L. Meyer, Ren Gernes, Matthew Spreitzer, Carter Burzlaff
+emails: erikmeyer@lewisu.edu, gernesl28@gmail.com, matthewdspreitzer@lewisu.edu, carterjburzlaff@lewisu.edu
 
-Required files: risk-calculator.js, , package.json
+Todo: Visual changes
