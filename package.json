@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ErikLMeyer/Health-Risk-Calculator/issues"
   },
-  "homepage": "https://github.com/ErikLMeyer/Health-Risk-Calculator#readme"
+  "homepage": "https://github.com/ErikLMeyer/Health-Risk-Calculator#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
