@@ -1,5 +1,6 @@
 /*
-    Node.js code goes in this file. -Erik
+    Node.js/Express for Health-Risk Calculator.
+    By: Erik L. Meyer
 */
 
 const express = require('express');
