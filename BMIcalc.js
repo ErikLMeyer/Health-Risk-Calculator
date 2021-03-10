@@ -6,9 +6,17 @@ function calcInsurance() {
     personDiastolic = document.getElementById("diastolic").value;  
     alert("Thank you")
     
+	if (personHeight <= 0) {
+		alert("Please try again. Enter only positive integers for height.")
+	}
+
+	if (personWeight <= 0) {
+		alert("Please try again. Enter only positive integers for weight.")
+	}
+		
     personHeight = personHeight.replace(/\D/g,'');
     personWeight = personWeight.replace(/\D/g,'');
-    
+	
     //This is the BMI portion
     BMICalced = ((personWeight / (personHeight * personHeight)) * 703)
     if (BMICalced > 18.5 && BMICalced < 24.9) {
@@ -19,7 +27,6 @@ function calcInsurance() {
         BMI = 75
     } else {
         BMI = 0
-        alert("Please Try again your BMI was either negative or 0")
     }
 
     document.getElementById("bmi_risk").value = BMI
