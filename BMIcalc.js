@@ -6,8 +6,9 @@ function calcInsurance() {
     personDiastolic = document.getElementById("diastolic").value;  
     alert("Thank you")
     
+    personHeight = personHeight.replace(/\D/g,'');
+    personWeight = personWeight.replace(/\D/g,'');
     
-
     //This is the BMI portion
     BMICalced = ((personWeight / (personHeight * personHeight)) * 703)
     if (BMICalced > 18.5 && BMICalced < 24.9) {
@@ -16,7 +17,10 @@ function calcInsurance() {
         BMI = 30
     } else if (BMICalced > 30) {
         BMI = 75
-    } 
+    } else {
+        BMI = 0
+        alert("Please Try again your BMI was either negative or 0")
+    }
 
     document.getElementById("bmi_risk").value = BMI
 
@@ -31,7 +35,9 @@ function calcInsurance() {
         bloodpressure = 75
     } else if (personSystolic == "more_than_180" && personDiastolic == "more_than_120") {
         bloodpressure = 100
-    } 
+    } else {
+        alert("Error with blood pressure make sure your bounds are correct")
+    }
     document.getElementById("blood_pressure_risk").value = bloodpressure
 
     //this is the age portion
